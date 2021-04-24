@@ -15,6 +15,7 @@ namespace DatingApp.API.Data
         }
         public async Task<User> Login(string username, string password)
         {
+            throw new Exception("What the sheet...");
             var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == username);
 
             if( user == null)
